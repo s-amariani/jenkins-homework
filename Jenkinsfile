@@ -10,12 +10,12 @@ pipeline {
       parallel {
         stage(\'Compile Maven Project\') {
           steps {
-            bat \'mvn compile\'
+            sh \'mvn compile\'
           }
         }
         stage(\'Maven Version\') {
           steps {
-            bat \'mvn -version\'
+            sh \'mvn -version\'
           }
         }
       }
