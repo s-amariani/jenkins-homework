@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('maven compile') {
       steps {
-        bat 'cd jenkins-homework && mvn clean test'
+        bat 'cd \\Users\\Sergi\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-homework_master && mvn clean test'
       }
     }
 
